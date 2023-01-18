@@ -1,0 +1,16 @@
+/* variable, mixins, listes */
+@import "./utils/Variables.scss";
+@import "./utils/mixins.scss";
+
+/* important */
+@import "./base/base.scss";
+@import "./components/button.scss";
+@import "./components/caroussel.scss";
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+
+/* index et pages */
+@import "./pages/404.scss";
+@import "./pages/A-Propos.scss";
+@import "./pages/Fiche-logement.scss";
+@import "./pages/Home.scss";
