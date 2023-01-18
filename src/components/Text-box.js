@@ -1,4 +1,29 @@
-export function TextBox()
+import React, {Component} from 'react';
+
+export class TextBox extends Component
 {
-    console.log("text-Box")
+    constructor(props)
+    {
+        super(props)
+        this.state =
+        {
+            checked:true,
+            title:undefined,
+            message:undefined
+        }
+    }
+
+    showText(e)
+    {
+    this.setState({checked : e.target.checked})
+    }
+
+    render()
+    {
+        return<div>
+            <label htmlFor="title">{this.props.title}</label>
+            <input type="checkbox" checked={this.state.checked} onChange={this.showText}/>
+            {this.state.checked ? <div>{this.props.message}</div> : null}
+        </div>
+    }
 }
