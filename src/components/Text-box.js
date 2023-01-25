@@ -7,10 +7,9 @@ export class TextBox extends Component
         super(props)
         this.state =
         {
-            checked:true,
-            title:undefined,
-            message:undefined
+            checked:true
         }
+        this.showText = this.showText.bind(this)
     }
 
     showText(e)

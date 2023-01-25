@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import App from './components/App';
+import Routeur from './Routeur';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render
 (
   <React.StrictMode>
-    <App />
+    <Routeur />
   </React.StrictMode>
 );
+
+/*import Test from './Test';*/
