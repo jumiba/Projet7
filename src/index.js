@@ -1,12 +1,13 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 import {Home} from "./pages/Home.js";
 import { APropos } from "./pages/A-Propos.js";
+import {PageError} from "./pages/404.js"
+
+/*import {Lien} from "./components/Header.js"*/
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
     path: "/a-propos",
     element: <APropos />,
+    children: []
+  },
+  {
+    path: "/Error",
+    element: <PageError />,
     children: []
   },
 ]);
