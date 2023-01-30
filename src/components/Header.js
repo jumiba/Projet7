@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export function Header()
 {
     return<div>
@@ -5,4 +7,14 @@ export function Header()
         <a className="btn-1" href="*">Accueil</a>
         <a className="btn-1" href="*">A Propos</a>
     </div> 
+}
+
+export function Lien()
+{
+    return(
+        <nav>
+            <Link to="/">Accueil</Link>
+            <Link to="/Apropos">A Propos</Link>
+        </nav>
+    )
 }

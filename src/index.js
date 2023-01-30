@@ -1,15 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Routeur from './Routeur';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+import {Home} from "./pages/Home.js";
+import { APropos } from "./pages/A-Propos.js";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    children: [],
+  },
+  {
+    path: "/a-propos",
+    element: <APropos />,
+    children: []
+  },
+]);
 
-root.render
-(
-  <React.StrictMode>
-    <Routeur />
-  </React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
 );
-
-/*import Test from './Test';*/

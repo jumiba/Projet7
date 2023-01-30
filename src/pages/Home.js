@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
 
+import logements from "../datas/logements.json"
+
 export class Home extends Component
 {
     constructor (props)
     {
         super(props)
+        console.log(logements)
         this.title = this.title.bind(this)
         this.image = this.image.bind(this)
     }
