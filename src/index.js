@@ -5,9 +5,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
 import {Home} from "./pages/Home.js";
 import { APropos } from "./pages/A-Propos.js";
-import {PageError} from "./pages/404.js"
-
-/*import {Lien} from "./components/Header.js"*/
+import {PageError} from "./pages/404.js";
 
 const router = createBrowserRouter([
   {

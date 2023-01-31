@@ -1,40 +1,21 @@
-import React, {Component} from 'react';
+import {Header} from "../components/Header.js";
+import {Logements} from "../components/Caroussel.js";
+import imgA from "../assets/Vector-A.png";
 
-import logements from "../datas/logements.json"
-
-export class Home extends Component
+export function Home ()
 {
-    constructor (props)
-    {
-        super(props)
-        console.log(logements)
-        this.title = this.title.bind(this)
-        this.image = this.image.bind(this)
-    }
-
-
-    title()
-    {
-        this.setState("title")
-    }
-
-    image()
-    {
-        this.setState("cover")
-    }
-
-
-    render()
-    {
         return<div>
+            <Header />
+            <img src={imgA} alt="A"/>
             <div id="banner">
-                <h2 className="title-2">chez vous, partout et ailleurs</h2>
+                <h2 className="test">chez vous, partout et ailleurs</h2>
                 <img className="img-1" alt="title"></img>
             </div>
             <div id="List">
                 <div className="list-1" title="title" image="cover"></div>
             </div>
+            <Logements />
         </div> 
     }
-}
 /*l'image devra etre charger en background sur le style*/
+/*import React, {Component} from 'react';*/

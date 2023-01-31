@@ -1,0 +1,11 @@
+@mixin btn
+{
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0px;
+    &:hover
+    {
+        box-shadow: $box-shadow-h;
+    }
+}
