@@ -1,0 +1,52 @@
+
+/*Header*/
+
+.Header
+{
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}
+
+.Header-1
+{
+    margin: 2px 2px 2px 2px;
+}
+
+.Header-1-K
+{
+    color:$color-1;
+    margin: 2px 2px 2px 2px;
+    width: 50px;
+    height: 60px;
+}
+
+.Header-1-L
+{
+    color:$color-1;
+    margin: 2px 2px 2px 2px;
+    width: 45px;
+    height: 45px;
+}
+
+.Header-2
+{
+    margin: 2px 2px 2px 2px;
+    font-size: 24px;
+
+}
+
+.Header-2-1
+{
+    @include btn-1;
+    position: absolute;
+    top: 70px;
+    right: 230px;
+}
+
+.Header-2-2
+{
+    @include btn-1;
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}

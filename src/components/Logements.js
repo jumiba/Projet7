@@ -1,5 +1,5 @@
 import json from "../datas/logements.json";
-import Card from "./card.js"
+import Card from "./Card.js"
 
 export function Logements()
 {

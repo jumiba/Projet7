@@ -1,18 +1,29 @@
+/*Importation des informations des logements*/
+
+import json from "../datas/logements.json";
+import Card from "../components/Card-Home.js"
+
+/*Importation des fonctions*/
 import {Header} from "../components/Header.js";
-import {Logements} from "../components/Logements.js";
+
+/*Importation des images*/
+import B1 from "../assets/background-Home.jpg";
+
+/*Importation du styles sass*/
 import '../sass/main.scss'
 
+/*Fonction Home*/
 export function Home ()
 {
     return<div>
         <Header />
-        <div id="banner">
-            <h2 className="test">chez vous, partout et ailleurs</h2>
+        <div className="Home-1">
+            <img src={B1} alt="Background-Home" className="Home-B"/>
+            <h1 className="Home-H">Chez vous, partout et ailleurs</h1>
         </div>
-        <div id="List">
-            <div className="list-1" title="title" image="cover"></div>
+        <div className="Home-2">
+            {json.map((json, index) => (<Card key={`${json.id}-${index}`} title={json.title} cover={json.cover}/>))}
         </div>
-        <Logements />
     </div> 
 }
 
