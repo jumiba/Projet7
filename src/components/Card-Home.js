@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-function Card({ id, title, cover}) 
+function Card({logement}) 
 {
     return (
-        <div className="Home-card">
-            <span className="idH">{id}</span>
-            <span className="titleH">{title}</span>
-            <img src={cover} alt="cover" className="CoverH"/>
-        </div>
+        <Link to={"/logements/" + logement.id} className="Home-2">
+            <div className="Home-card">
+                <span className="titleH">{logement.title}</span>
+                <img src={logement.cover} alt="cover" className="CoverH"/>
+            </div>
+        </Link>
     )
 }
 

@@ -1,3 +1,6 @@
+/*Importation du routeur*/
+import { Link } from "react-router-dom";
+
 /*Importation des informations des logements*/
 
 import json from "../datas/logements.json";
@@ -21,10 +24,10 @@ export function Home ()
             <img src={B1} alt="Background-Home" className="Home-B"/>
             <h1 className="Home-H">Chez vous, partout et ailleurs</h1>
         </div>
-        <div className="Home-2">
-            {json.map((json, index) => (<Card key={`${json.id}-${index}`} title={json.title} cover={json.cover}/>))}
+        <div>
+            {json.map((json) => (<Card key={json.id} logement={json}/>))}
         </div>
     </div> 
 }
 
-/*You can provide a way better UX than this when your app throws errors by providing your own errorElement props on <Route>*/
+/*You can provide a way better UX than this when your app throws errors by providing your own errorElement props on <Route> className="Home-2" */
