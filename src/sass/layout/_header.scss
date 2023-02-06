@@ -3,6 +3,7 @@
 
 .Header
 {
+    @include body;
     display: flex;
     margin: 10px 0px 10px 0px;
 }

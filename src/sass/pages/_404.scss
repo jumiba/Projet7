@@ -1,0 +1,37 @@
+.Erreur
+{
+    @include body;
+    display:flex;
+    flex-direction: column;
+}
+
+.Erreur-1
+{
+    text-align: center;
+    color: $color-1;
+    font-size: 250px;
+    margin: 0px;
+}
+
+.Erreur-p
+{
+    text-align: center;
+    color: $color-1;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.Erreur-l
+{
+    display:flex;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+.Erreur-a
+{
+    @include btn-1;
+    color: $color-1;
+    font-size: 15px;
+    margin-left: 42%;
+}

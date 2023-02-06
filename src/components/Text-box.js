@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import chevB from "../assets/chevron-bas.png";
+import chevH from "../assets/chevron-haut.png";
 
 export class TextBox extends Component
 {
@@ -19,10 +21,12 @@ export class TextBox extends Component
 
     render()
     {
-        return<div>
-            <label htmlFor="title">{this.props.title}</label>
-            <input type="checkbox" checked={this.state.checked} onChange={this.showText}/>
-            {this.state.checked ? <div>{this.props.message}</div> : null}
+        return<div className="Textbox">
+            <label htmlFor="title" className="Textbox-box"><p className="Textbox-title">{this.props.title}</p></label>
+            {this.state.checked ? 
+            <div className="B"> <img src={chevB} alt="K" className="chev"/> <p className="Textbox-text">{this.props.message}</p></div>
+            : <div className="B"><img src={chevH} alt="K" className="chev"/></div>}
+            <input type="checkbox" className="Checkbox" checked={this.state.checked} onChange={this.showText}/>
         </div>
     }
 }

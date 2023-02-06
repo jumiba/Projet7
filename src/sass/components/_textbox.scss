@@ -1,0 +1,41 @@
+.Textbox
+{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Textbox-title
+{
+    background-color: $color-1;
+    color: $color-3;
+    border-radius: $border-radius3;
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+.chev
+{
+    position: absolute;
+    right : 20px;
+    top : 0px;
+}
+
+.Checkbox
+{
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+}
+
+.Textbox-text
+{
+    background-color: $color-4;
+    border-radius: 0px 0px 5px 5px;
+    color: $color-1;
+    margin: 0px 0px 0px 0px;
+}
+
+

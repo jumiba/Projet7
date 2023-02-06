@@ -1,21 +1,14 @@
-import React, {Component} from 'react';
 import {TextBox} from '../components/Text-box.js';
 
-export class APropos extends Component
-{
-    constructor(props)
-    {
-        super(props)
-        this.state = 
-        {
-            title:undefined,
-            message:undefined
-        }
-    }
+/*Importation des fonctions*/
+import {Header} from "../components/Header.js";
+import {Footer} from "../components/Footer.js";
 
-    render()
-    {
-        return <div>
+export function APropos()
+{
+    return <div>
+        <Header />
+        <div className="Apropos">
             <TextBox 
             title="Fiabilité" 
             message="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
@@ -34,7 +27,8 @@ export class APropos extends Component
             <TextBox 
             title="Sécurité"
             message="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
-            />
+        />
         </div>
-    }
+    <Footer/>
+    </div>
 }

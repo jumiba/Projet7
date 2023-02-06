@@ -12,9 +12,9 @@ export function Header()
 {
     return<div className="Header">
         <div className="Header-1">
-        <img src={imgK} alt="A" className="Header-1-K"/>
-        <img src={imgH} alt="A" className="Header-1-L"/>
-        <img src={imgS} alt="A" className="Header-1-L"/>
+        <img src={imgK} alt="K" className="Header-1-K"/>
+        <img src={imgH} alt="H" className="Header-1-L"/>
+        <img src={imgS} alt="S" className="Header-1-L"/>
         <img src={imgA} alt="A" className="Header-1-L"/>
         </div>
         <nav className="Header-2">

@@ -8,3 +8,8 @@
         border-bottom: solid 1px $color-1;
     }
 }
+
+@mixin body
+{
+    padding: 30px 4%;
+}
