@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 
+/*const idid = if(!id )*/
 export function FicheLogement ()
 {
     const {id} = useParams();

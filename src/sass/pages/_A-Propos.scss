@@ -3,3 +3,26 @@
     @include body;
     text-decoration: none;
 }
+
+.banniere-AP
+{
+    margin: 0px 0px 50px 0px;
+    padding: 0px;
+    height: 225px;
+    background: #000000;
+    border-radius: $border-radius1;
+}
+
+.Apropos-B
+{
+    position: absolute;
+    width: 91%;
+    height: 225px;
+    opacity: 0.7;
+    border-radius: $border-radius1;
+}
+
+.Body-AP
+{
+    margin: 0px 50px;
+}

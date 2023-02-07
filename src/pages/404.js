@@ -1,10 +1,11 @@
-
+/*Importation de fonctionnalité de react router*/
 import { Link } from 'react-router-dom'
 
 /*Importation des fonctions*/
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
 
+/*Fonction De la page d'erreur*/
 export function PageError()
 {
     return<div>

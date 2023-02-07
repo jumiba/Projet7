@@ -29,5 +29,3 @@ export function Home ()
         <Footer />
     </div> 
 }
-
-/*You can provide a way better UX than this when your app throws errors by providing your own errorElement props on <Route>*/
