@@ -1,6 +1,6 @@
 /*Importation des informations des logements*/
 import json from "../datas/logements.json";
-import Card from "../components/Card-Home.js"
+import Logement from "../components/Logement.js"
 
 /*Importation des fonctions*/
 import {Header} from "../components/Header.js";
@@ -23,7 +23,7 @@ export function Home ()
                 <h1 className="Home-H">Chez vous, partout et ailleurs</h1>
             </div>
             <div className="Home-2">
-                {json.map((json) => (<Card key={json.id} logement={json}/>))}
+                {json.map((json) => (<Logement key={json.id} logement={json}/>))}
             </div>
         </div>
         <Footer />

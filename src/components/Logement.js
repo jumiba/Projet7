@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
-function Card({logement}) 
+function Logement({logement}) 
 {
     return (
         <Link to={"/logements/" + logement.id}>
@@ -13,10 +12,4 @@ function Card({logement})
     )
 }
 
-Card.propTypes = {
-    id: PropTypes.string,
-    title: PropTypes.string,
-    cover: PropTypes.string,
-}
-
-export default Card
+export default Logement

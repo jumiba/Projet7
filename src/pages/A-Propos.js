@@ -1,5 +1,5 @@
 /*Importation des fonctions*/
-import {TextBox} from '../components/Text-box.js';
+import {TextBox} from '../components/Collapse.js';
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
 

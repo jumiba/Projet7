@@ -21,12 +21,19 @@ const router = createBrowserRouter
     {
         path: "/a-propos",
         element: <APropos />,
+        errorElement: <PageError />,
         children: []
     },
     {
         path: "/logements/:id" ,
         element: <FicheLogement />,
-        children: []
+        errorElement: <PageError />,
+        children:[]
+    },
+    {
+        path: "/Error",
+        element: <PageError />,
+        children: [],
     },
 ]);
 
