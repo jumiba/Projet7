@@ -10,6 +10,7 @@ import { APropos } from "./pages/A-Propos.js";
 import {PageError} from "./pages/404.js";
 import {FicheLogement} from "./pages/Fiche-logement.js";
 
+
 /*Routers du site*/
 const router = createBrowserRouter
 ([

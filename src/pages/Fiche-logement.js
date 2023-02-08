@@ -1,8 +1,9 @@
 /*Importation des fonctions*/
 import {TextBox} from '../components/Collapse.js';
-import {Example} from '../components/Carrousel.js';
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
+import {Carrousel} from "../components/Carrousel.js";
+
 
 /*Importation des informations des logements*/
 import json from "../datas/logements.json";
@@ -13,11 +14,9 @@ export function FicheLogement ()
 {
     const {id} = useParams();
     const Liste = json.find((C) => C.id === id);
-    console.log(Liste);
     return<div>
         <Header />
-        <Example/>
-        <img src={Liste.pictures[0]} alt="Background-Loge" className="Loge-B"/>
+        <Carrousel />
         <div className="Loge-box-1">
             <h1 className="Loge-title">{Liste.title}</h1>
             <p className="Loge-host-1">{Liste.host.name}</p>
