@@ -1,10 +1,10 @@
 /*Importation des informations des logements*/
 import json from "../datas/logements.json";
-import Logement from "../components/Logement.js"
 
 /*Importation des fonctions*/
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
+import {LinkHome} from "../index.js"
 
 /*Importation des images*/
 import B1 from "../assets/background-Home.jpg";
@@ -23,7 +23,7 @@ export function Home ()
                 <h1 className="Home-H">Chez vous, partout et ailleurs</h1>
             </div>
             <div className="Home-2">
-                {json.map((json) => (<Logement key={json.id} logement={json}/>))}
+                {json.map((json) => (<LinkHome key={json.id} logements={json}/>))}
             </div>
         </div>
         <Footer />

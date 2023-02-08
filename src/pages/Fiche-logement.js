@@ -1,5 +1,6 @@
 /*Importation des fonctions*/
 import {TextBox} from '../components/Collapse.js';
+import {Example} from '../components/Carrousel.js';
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
 
@@ -15,6 +16,7 @@ export function FicheLogement ()
     console.log(Liste);
     return<div>
         <Header />
+        <Example/>
         <img src={Liste.pictures[0]} alt="Background-Loge" className="Loge-B"/>
         <div className="Loge-box-1">
             <h1 className="Loge-title">{Liste.title}</h1>

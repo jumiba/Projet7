@@ -1,15 +1,24 @@
-import { Link } from 'react-router-dom';
+import json from "../datas/logements.json";
+import Card from "./Card.js"
 
-function Logement({logement}) 
+export function Logements()
 {
     return (
-        <Link to={"/logements/" + logement.id}>
-            <div className="Home-card">
-                <span className="titleH">{logement.title}</span>
-                <img src={logement.cover} alt="cover" className="CoverH"/>
-            </div>
-        </Link>
+        <div>
+            {json.map((json, index) => (
+                <Card
+                    key={`${json.id}-${index}`}
+                    id={json.id}
+                    title={json.title}
+                    cover={json.cover}
+                    pictures={json.pictures}
+                    description={json.description}
+                    rating={json.rating}
+                    location={json.location}
+                    equipments={json.equipments}
+                    tags={json.tags}
+                />
+            ))}
+        </div>
     )
 }
-
-export default Logement
