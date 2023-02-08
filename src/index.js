@@ -65,14 +65,14 @@ export function LinkErr()
     </div> 
 }
 
-export function LinkHome({logements}) 
+export function LinkHome({logement}) 
 {
     return (
-        <Link to={"/logements/" + logements.id}>
-            <div className="Home-card">
-                <span className="titleH">{logements.title}</span>
-                <img src={logements.cover} alt="cover" className="CoverH"/>
-            </div>
-        </Link>
+        <Link to={"/logements/" + logement.id}>
+        <div className="Home-card">
+            <span className="titleH">{logement.title}</span>
+            <img src={logement.cover} alt="cover" className="CoverH"/>
+        </div>
+    </Link>
     )
 }
