@@ -1,3 +1,5 @@
+/*Page Home*/
+
 .Home
 {
     @include body;
@@ -53,12 +55,15 @@
     border-radius: $border-radius2;
     height: 370px; 
     width: 390px;
+    object-fit: cover;
 }
 
 .titleH
 {
     position: absolute;
-    top: 340px;
+    bottom: 15px;
+    left: 15px;
+    margin-right: 150px ;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;

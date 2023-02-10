@@ -1,6 +1,8 @@
 /*Importation des fonctions*/
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
+
+/*Importation de Lien*/
 import {LinkErr} from "../index.js";
 
 /*Fonction De la page d'erreur*/

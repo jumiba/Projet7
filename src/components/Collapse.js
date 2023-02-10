@@ -1,7 +1,11 @@
+/*Importation des fonctionnalités de react*/
 import React, {Component} from 'react';
+
+/*Importation des chevrons*/
 import chevB from "../assets/chevron-bas.png";
 import chevH from "../assets/chevron-haut.png";
 
+/*Class Textbox pour faire le collapse*/
 export class TextBox extends Component
 {
     constructor(props)
@@ -9,7 +13,7 @@ export class TextBox extends Component
         super(props)
         this.state =
         {
-            checked:true
+            checked:false
         }
         this.showText = this.showText.bind(this)
     }

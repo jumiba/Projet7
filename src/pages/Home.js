@@ -6,7 +6,6 @@ import {LinkHome} from "../index.js"
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
 
-
 /*Importation des images*/
 import B1 from "../assets/background-Home.jpg";
 

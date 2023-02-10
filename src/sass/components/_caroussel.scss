@@ -1,0 +1,38 @@
+/*Carrousel*/
+
+.Chevr
+{
+    position: relative;
+}
+
+.Chevr-D
+{
+    position: absolute;
+    bottom: 150px;
+    right:20px;
+}
+
+.Chevr-BD
+{
+    position: absolute;
+    bottom: 155px;
+    right:20px;
+    font-size: 60px;
+    opacity:0;
+}
+
+.Chevr-G
+{
+    position: absolute;
+    bottom: 150px;
+    left:20px;
+}
+
+.Chevr-BG
+{
+    position: absolute;
+    bottom: 155px;
+    left:20px;
+    font-size: 60px;
+    opacity:0;
+}

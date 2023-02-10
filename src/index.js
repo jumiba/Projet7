@@ -47,6 +47,7 @@ ReactDOM.createRoot(document.getElementById("root")).render
 );
 
 /*Fonctions Link pour la navigation entre les pages*/
+
 export function LinkNav()
 {
     return<div>
@@ -71,8 +72,8 @@ export function LinkHome({logement})
     return (
         <Link to={"/logements/" + logement.id}>
         <div className="Home-card">
-            <span className="titleH">{logement.title}</span>
             <img src={logement.cover} alt="cover" className="CoverH"/>
+            <span className="titleH">{logement.title}</span>
         </div>
     </Link>
     )

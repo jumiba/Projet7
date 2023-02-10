@@ -1,3 +1,5 @@
+/*Mixins*/
+
 @mixin btn-1
 {
     color:$color-1;
@@ -11,5 +13,5 @@
 
 @mixin body
 {
-    padding: 30px 4%;
+    padding: 20px 4%;
 }

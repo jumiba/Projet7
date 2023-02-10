@@ -1,13 +1,15 @@
 /* variable, mixins, listes */
 @import "./utils/Variables.scss";
-@import "./utils/mixins.scss";
+@import "./utils/Mixins.scss";
 
-/* important */
-@import "./base/base.scss";
-@import "./components/textbox.scss";
-@import "./components/caroussel.scss";
-@import "./layout/footer.scss";
-@import "./layout/header.scss";
+/* Eléments */
+@import "./base/Base.scss";
+@import "./components/Caroussel.scss";
+@import "./components/Collapse.scss";
+@import "./components/Rating.scss";
+@import "./components/Tags.scss";
+@import "./layout/Footer.scss";
+@import "./layout/Header.scss";
 
 /* index et pages */
 @import "./pages/404.scss";
