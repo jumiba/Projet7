@@ -1,10 +1,16 @@
 /*Page fiche logement*/
 
+
+.FicheLogement
+{
+        @include body;
+}
+
 .Loge-B
 {
     border-radius: $border-radius1;
     width: 100%;
-    height: 430px;
+    height: 450px;
     object-fit: cover;
 }
 
@@ -15,14 +21,6 @@
     position: relative;
 }
 
-.Loge-name
-{
-    right: 0px;
-    display:flex;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
 
 .Loge-title-1
 {
@@ -38,14 +36,39 @@
     padding: 0px;
 }
 
-.Loge-host-1
+.Loge-per
 {
+    right: 0px;
+    display:flex;
+    position: absolute;
+    bottom: 0px;
+}
+
+.Loge-name
+{
+    display:flex;
+    flex-direction: column;
+}
+
+.Loge-host-1-1
+{
+    text-align: end;
     font-size: 18px;
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
     padding: 0px;
 }
+
+.Loge-host-1-2
+{
+    text-align: end;
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
 .Loge-host-2
 {
+    margin-left: 10px;
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -59,16 +82,13 @@
 .Loge-AP
 {
     display:flex;
+    margin-top: 20px;
 }
 
 .AP1
 {
     flex: 1;
-}
-
-.FicheLogement
-{
-        @include body;
+    margin-right: 50px;
 }
 
 .AP2

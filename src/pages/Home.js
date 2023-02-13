@@ -1,10 +1,10 @@
 /*Importation des informations des logements*/
 import json from "../datas/logements.json";
-import {LinkHome} from "../index.js"
 
 /*Importation des fonctions*/
 import {Header} from "../components/Header.js";
 import {Footer} from "../components/Footer.js";
+import {LinkHome} from "../components/LinkHome.js"
 
 /*Importation des images*/
 import B1 from "../assets/background-Home.jpg";
@@ -16,7 +16,7 @@ import '../sass/main.scss'
 export function Home ()
 {
     return<div>
-        <Header />
+        <Header class1="Header-2-1-H" class2="Header-2-2"/>
         <div className="Home">
             <div className="Home-1">
                 <img src={B1} alt="Background-Home" className="Home-B"/>

@@ -11,10 +11,7 @@ export class TextBox extends Component
     constructor(props)
     {
         super(props)
-        this.state =
-        {
-            checked:false
-        }
+        this.state = {checked:false}
         this.showText = this.showText.bind(this)
     }
 
@@ -26,10 +23,10 @@ export class TextBox extends Component
     render()
     {
         return<div className="Textbox">
-            <label htmlFor="title" className="Textbox-box"><p className="Textbox-title">{this.props.title}</p></label>
+            <label htmlFor="title" className="Textbox-box"><p className={this.props.Texttitle}>{this.props.title}</p></label>
             {this.state.checked ? 
-            <div className="B"> <img src={chevB} alt="K" className="chev"/> <p className="Textbox-text">{this.props.message}</p></div>
-            : <div className="B"><img src={chevH} alt="K" className="chev"/></div>}
+            <div className="div-B"><img src={chevB} alt="K" className={this.props.Textchev}/> <p className={this.props.Texttext}>{this.props.message}</p></div>
+            : <div className="div-B"><img src={chevH} alt="K" className={this.props.Textchev}/></div>}
             <input type="checkbox" className="Checkbox" checked={this.state.checked} onChange={this.showText}/>
         </div>
     }

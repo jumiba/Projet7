@@ -1,1 +1,25 @@
 /*Tags*/
+
+.Tags
+{
+    display: flex;
+    position: relative;
+}
+
+.Tags-box
+{
+    background-color: $color-1;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.Tags-list
+{
+    position: relative;
+    color: $color-3;
+    top: 6px;
+    text-align: center;
+    font-size: 13px;
+}
