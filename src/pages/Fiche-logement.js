@@ -1,27 +1,28 @@
+/*Importation des informations des logements et de useparams pour récupérer l'id*/
+import json from "../utils/logements.json";
+import { useParams } from "react-router-dom";
+
 /*Importation des fonctions*/
-import {Header} from "../components/Header.js";
-import {Footer} from "../components/Footer.js";
+import {Header} from "../layout/Header.js";
+import {Footer} from "../layout/Footer.js";
 import {TextBox} from '../components/Collapse.js';
 import {Carrousel} from "../components/Carrousel.js";
 import {Tags} from "../components/Tags.js";
 import {Rating} from "../components/Rating.js";
 
-/*Importation de la profile picture par défaut*/
+/*Importation de l'image de profil par défaut*/
 import pp from "../assets/profile.png";
 
-
-
-/*Importation des informations des logements et de useparams pour récupérer l'id*/
-import json from "../datas/logements.json";
-import { useParams } from "react-router-dom";
-
-/*Fonction fiche-logement pour l'affichage du logement demander en id*/
+/*Fonction fiche-logement lier à l'id demander*/
 export function FicheLogement ()
 {
+    /*Variables*/
     const {id} = useParams();
     const Liste = json.find((C) => C.id === id);
     const nom = Liste.host.name.split(' ');
     const listItems = Liste.equipments.map((item) => <li key={item}>{item}</li>);
+
+    /*intégration*/
     return<div>
         <Header class1="Header-2-1" class2="Header-2-2"/>
         <div className="FicheLogement">

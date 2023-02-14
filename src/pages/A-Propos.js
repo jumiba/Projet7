@@ -1,7 +1,7 @@
 /*Importation des fonctions*/
-import {TextBox} from '../components/Collapse.js';
-import {Header} from "../components/Header.js";
-import {Footer} from "../components/Footer.js";
+import {TextBox} from "../components/Collapse.js";
+import {Header} from "../layout/Header.js";
+import {Footer} from "../layout/Footer.js";
 
 /*Importation des images*/
 import B2 from "../assets/background-Apropos.jpg";
@@ -49,6 +49,6 @@ export function APropos()
                 />
             </div>
         </div>
-    <Footer/>
+        <Footer/>
     </div>
 }

@@ -1,9 +1,7 @@
-/*Importation des fonctionnalités de react*/
+/*Importation des fonctionnalités de react et des données*/
 import React, { useState } from 'react';
 import { useParams } from "react-router-dom";
-
-/*Importation des informations des logements*/
-import json from "../datas/logements.json";
+import json from "../utils/logements.json";
 
 /*Importation des chevrons*/
 import imgCD from "../assets/chevron-droit.png";
@@ -12,10 +10,12 @@ import imgCG from "../assets/chevron-gauche.png";
 /*Fonction Carrousel pour l'enchainement des images d'un logement*/
 export function Carrousel()
 {
+	/*Variables*/
 	const [Loge, setLoge] = useState(0);
 	const {id} = useParams();
 	const Liste = json.find((C) => C.id === id);
 
+	/*intégration*/
 	return<div>
 		<img src={Liste.pictures[Loge]} alt="Background-Loge" className="Loge-B"/>
 		<div className="Carrousel">

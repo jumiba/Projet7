@@ -1,3 +1,5 @@
+/*L'index est le routeur du site*/
+
 /*Importation des fonctionnalités de react et react router*/
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
@@ -6,9 +8,8 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 /*Importation des pages du sites*/
 import {Home} from "./pages/Home.js";
 import { APropos } from "./pages/A-Propos.js";
-import {PageError} from "./pages/404.js";
+import {PageError} from "./pages/Error.js";
 import {FicheLogement} from "./pages/Fiche-logement.js";
-
 
 /*Routers du site*/
 const router = createBrowserRouter

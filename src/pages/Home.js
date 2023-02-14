@@ -1,16 +1,14 @@
-/*Importation des informations des logements*/
-import json from "../datas/logements.json";
+/*Importation des informations des logements et du style*/
+import json from "../utils/logements.json";
+import '../sass/main.scss'
 
 /*Importation des fonctions*/
-import {Header} from "../components/Header.js";
-import {Footer} from "../components/Footer.js";
-import {LinkHome} from "../components/LinkHome.js"
+import {Header} from "../layout/Header.js";
+import {Footer} from "../layout/Footer.js";
+import {LinkHome} from "../components/Links.js"
 
 /*Importation des images*/
 import B1 from "../assets/background-Home.jpg";
-
-/*Importation du styles sass*/
-import '../sass/main.scss'
 
 /*Fonction Home*/
 export function Home ()

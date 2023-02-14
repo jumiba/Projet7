@@ -1,9 +1,26 @@
-base : contient les fichiers qui définissent les fondations de votre site, les normes que vous voulez appliquer sur tout votre site
+Francais
 
-utils : Les variables, fonctions, mixins et les données(data)
+Ce site a été fait grace a "create react app", "react router" et "sass".
 
-layouts : les blocs de code réutilisables représentant des parties principales du sites
+Afin de simplifier la structure, Les 2 grandes parties en js et en sass ont été structurer avec 6 parties :
 
-components : les blocs de code réutilisables représentant des fonctionnalités du sites
+- base : contient les fichiers qui définissent les bases, les normes appliquer sur le site;
+- assets : contient les fichers importés tel que les images;
+- utils : Les variables, fonctions, mixins et les données;
+- layouts : les blocs de code réutilisables représentant des parties principales des pages du site;
+- components : les blocs de code réutilisables représentant des fonctionnalités du site;
+- pages : les blocs de code qui représentent chacun une page.
 
-pages : les blocs de code qui représentent chacun une page.
+
+English
+
+This site was made with "create react app", "react router" and "sass".
+
+For simplify the structure, The 2 main in js and in sass parts have been structured with 6 parts:
+
+- base: contains the files that define the foundations, the standards applied to the site;
+- assets: contains imported files such as images;
+- utils: Variables, functions, mixins and data;
+- layouts: reusable code blocks representing main parts of the site;
+- components: reusable code blocks representing site functionalities;
+- pages: the blocks of code which each represent a page.
