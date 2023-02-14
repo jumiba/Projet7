@@ -1,15 +1,16 @@
 /*L'index est le routeur du site*/
 
-/*Importation des fonctionnalités de react et react router*/
+/*Importation des fonctionnalités de react, react router et de sass*/
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import "./sass/main.scss";
 
 /*Importation des pages du sites*/
-import {Home} from "./pages/Home.js";
-import { APropos } from "./pages/A-Propos.js";
-import {PageError} from "./pages/Error.js";
-import {FicheLogement} from "./pages/Fiche-logement.js";
+import {Home} from "./js/pages/Home.js";
+import { APropos } from "./js/pages/A-Propos.js";
+import {PageError} from "./js/pages/Error.js";
+import {FicheLogement} from "./js/pages/Fiche-logement.js";
 
 /*Routers du site*/
 const router = createBrowserRouter

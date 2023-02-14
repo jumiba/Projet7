@@ -1,6 +1,5 @@
 /*Importation des informations des logements et du style*/
 import json from "../utils/logements.json";
-import '../sass/main.scss'
 
 /*Importation des fonctions*/
 import {Header} from "../layout/Header.js";

@@ -2,7 +2,7 @@ Francais
 
 Ce site a été fait grace a "create react app", "react router" et "sass".
 
-Afin de simplifier la structure, Les 2 grandes parties en js et en sass ont été structurer avec 6 parties :
+Afin de simplifier la structure, Les 2 grandes parties "js" et "sass" ont été structurer avec 6 parties :
 
 - base : contient les fichiers qui définissent les bases, les normes appliquer sur le site;
 - assets : contient les fichers importés tel que les images;
@@ -16,7 +16,7 @@ English
 
 This site was made with "create react app", "react router" and "sass".
 
-For simplify the structure, The 2 main in js and in sass parts have been structured with 6 parts:
+For simplify the structure, The 2 main "js" and "sass" parts have been structured with 6 parts:
 
 - base: contains the files that define the foundations, the standards applied to the site;
 - assets: contains imported files such as images;
