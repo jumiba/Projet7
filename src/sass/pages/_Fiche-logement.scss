@@ -3,12 +3,12 @@
 
 .FicheLogement
 {
-        @include body;
+    margin: $margin-1;
 }
 
 .Loge-B
 {
-    border-radius: $border-radius1;
+    border-radius: $border-radius-1;
     width: 100%;
     height: 450px;
     object-fit: cover;

@@ -1,6 +1,15 @@
 /*Importation de la fonction link de react*/
 import {Link} from "react-router-dom";
 
+/*Fonction LinkHeader*/
+export function LinkHeader(props)
+{
+    return<nav className="Header-2">
+        <Link to="/" className={props.class1}>Accueil</Link>
+        <Link to="/a-propos" className={props.class2}>A Propos</Link>
+    </nav>
+}
+
 /*Fonction LinkHome*/
 export function LinkHome({logement}) 
 {
@@ -12,15 +21,6 @@ export function LinkHome({logement})
             </div>
         </Link>
     )
-}
-
-/*Fonction LinkHeader*/
-export function LinkHeader(props)
-{
-    return<nav className="Header-2">
-        <Link to="/" className={props.class1}>Accueil</Link>
-        <Link to="/a-propos" className={props.class2}>A Propos</Link>
-    </nav>
 }
 
 /*Fonction LinkError*/

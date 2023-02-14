@@ -3,73 +3,83 @@
 
 .Header
 {
-    @include body;
+    margin: $margin-1;
+    padding: 50px 0px 10px 0px;
     display: flex;
-    margin: 10px 0px 10px 0px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Header-1
 {
-    margin: 2px 2px 2px 2px;
+    margin: 0px;
 }
 
 .Header-1-K
 {
-    color:$color-1;
-    margin: 2px 2px 2px 2px;
-    width: 50px;
+    @include Header-1;
     height: 60px;
 }
 
 .Header-1-L
 {
-    color:$color-1;
-    margin: 2px 2px 2px 2px;
-    width: 45px;
-    height: 45px;
+    @include Header-1;
+    height: 50px;
 }
 
 .Header-2
 {
-    margin: 2px 2px 2px 2px;
     font-size: 24px;
-
 }
 
 .Header-2-1
 {
-    @include btn-1;
-    position: absolute;
-    top: 50px;
-    right: 230px;
+    @include Header-2;
+    @include Btn-1;
 }
 
 .Header-2-1-H
 {
-    color:$color-1;
-    text-decoration: none;
-    padding-bottom: 1px;
+    @include Header-2;
     border-bottom: solid 1px $color-1;
-    position: absolute;
-    top: 50px;
-    right: 230px;
 }
 
 .Header-2-2
 {
-    @include btn-1;
-    position: absolute;
-    top: 50px;
-    right: 70px;
+    @include Header-2;
+    @include Btn-1;
+    margin-left: 50px;
 }
 
 .Header-2-2-A
 {
-    color:$color-1;
-    text-decoration: none;
-    padding-bottom: 1px;
+    @include Header-2;
     border-bottom: solid 1px $color-1;
-    position: absolute;
-    top: 50px;
-    right: 70px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .Header-1-K
+    {
+        height: 45px;
+        width: 40px;
+    }
+
+    .Header-2-2
+    {
+        margin-left: 15px;
+    }
+
+    .Header-1-L
+    {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Header-2
+    {
+        font-size: 13px;
+        text-transform: uppercase;
+    }
 }

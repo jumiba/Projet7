@@ -1,17 +1,22 @@
 /*Mixins*/
-
-@mixin btn-1
+@mixin Btn-1
 {
-    color:$color-1;
-    text-decoration: none;
     &:hover
     {
-        padding-bottom: 1px;
         border-bottom: solid 1px $color-1;
     }
 }
 
-@mixin body
+@mixin Header-1
 {
-    padding: 20px 4%;
+    color:$color-1;
+    margin-right: 5px;
+    width: 50px;
+}
+
+@mixin Header-2
+{
+    color:$color-1;
+    text-decoration: none;
+    padding-bottom: 1px;
 }
