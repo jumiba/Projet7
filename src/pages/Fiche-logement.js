@@ -4,6 +4,11 @@ import {Footer} from "../components/Footer.js";
 import {TextBox} from '../components/Collapse.js';
 import {Carrousel} from "../components/Carrousel.js";
 import {Tags} from "../components/Tags.js";
+import {Rating} from "../components/Rating.js";
+
+/*Importation de la profile picture par défaut*/
+import pp from "../assets/profile.png";
+
 
 
 /*Importation des informations des logements et de useparams pour récupérer l'id*/
@@ -31,12 +36,12 @@ export function FicheLogement ()
                         <p className="Loge-host-1-1">{nom[0]}</p>
                         <p className="Loge-host-1-2">{nom[1]}</p>
                     </div>
-                    <img src={Liste.host.picture} alt="Loge-host-2" className="Loge-host-2"/>
+                    <img src={Liste.host.picture ? Liste.host.picture : {pp}} alt="Loge-host-2" className="Loge-host-2"/>
                 </div>
             </div>
             <div className="Loge-box-2">
                 <Tags/>
-                <div className="Loge-stars">{/*Stars*/}</div>
+                <Rating/>
             </div>
             <div className="Loge-AP">
                 <div className="AP1">
