@@ -7,46 +7,59 @@
 
 .Home-1
 {
-    margin: 0px;
-    padding: 0px;
+    position: relative;
     height: 225px;
     background: #000000;
     border-radius: $border-radius-1;
+    display: flex;
+    align-items: center;
 }
 
 .Home-B
 {
     position: absolute;
-    width: 91%;
-    height: 225px;
+    width: 100%;
+    height: 100%;
     opacity: 0.7;
     border-radius: $border-radius-1;
+}
+
+.Home-DH
+{
+    flex: 1;
 }
 
 .Home-H
 {
     position: relative;
     font-style: normal;
-    padding-top: 85px;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 50px;
     text-align: center;
+    opacity: 1;
     font-family: $police-1;
     color: $color-3;
+}
+
+.mobile
+{
+    display: none;
 }
 
 .Home-2
 {
     margin : 50px 0px;
+    padding-bottom: 50px;
     background-color: $color-4;
     border-radius: $border-radius-1;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .Home-card
 {
-    margin: 50px 0px 0px 50px;
+    margin-top: 50px;
     position: relative;
 }
 
@@ -54,7 +67,7 @@
 {
     border-radius: $border-radius-2;
     height: 370px; 
-    width: 390px;
+    width: 370px;
     object-fit: cover;
 }
 
@@ -69,4 +82,73 @@
     font-weight: 500;
     font-size: 18px;
     color: $color-3;
+}
+
+@media screen and (max-width: 1300px)
+{
+    .CoverH
+    {
+        height: 320px; 
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    .CoverH
+    {
+        height: 270px; 
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 770px)
+{
+    .Home-1
+    {
+        height: 150px;
+        border-radius: $border-radius-2;
+    }
+
+    .Home-B
+    {
+        border-radius: $border-radius-2;
+    }
+
+
+    .Home-H
+    {
+        font-weight: 500;
+        font-size: 24px;
+        text-align: start;
+        margin:20px;
+    }
+    .mobile
+    {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .Home-2
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        margin : 10px 0px;
+        padding-bottom: 10px;
+    }
+
+    .Home-card
+    {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .CoverH
+    {
+        height: 250px; 
+        width: 100%;
+    }
 }

@@ -13,6 +13,7 @@
 .Header-1
 {
     margin: 0px;
+    align-items: end;
 }
 
 .Header-1-K
@@ -29,6 +30,7 @@
 
 .Header-2
 {
+    font-weight: 500;
     font-size: 24px;
 }
 
@@ -62,19 +64,19 @@
 {
     .Header-1-K
     {
-        height: 45px;
-        width: 40px;
+        height: 40px;
+        width: 35px;
+    }
+
+    .Header-1-L
+    {
+        height: 35px;
+        width: 35px;
     }
 
     .Header-2-2
     {
         margin-left: 15px;
-    }
-
-    .Header-1-L
-    {
-        height: 30px;
-        width: 30px;
     }
 
     .Header-2

@@ -28,4 +28,19 @@
     text-align: center;
     color: $color-3;
     padding-bottom: 20px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .Footer-1
+    {
+        padding-top: 70px;
+    }
+
+    .Footer-p
+    {
+        padding-bottom: 70px;
+        font-size: 12px;
+    }
 }

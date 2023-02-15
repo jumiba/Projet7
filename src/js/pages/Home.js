@@ -17,7 +17,9 @@ export function Home ()
         <div className="Home">
             <div className="Home-1">
                 <img src={B1} alt="Background-Home" className="Home-B"/>
-                <h1 className="Home-H">Chez vous, partout et ailleurs</h1>
+                <div className="Home-DH">
+                    <h1 className="Home-H">Chez vous,<div className="mobile"></div> partout et ailleurs</h1>
+                </div>
             </div>
             <div className="Home-2">
             {json.map((json) => (<LinkHome key={json.id} logement={json}/>))}
