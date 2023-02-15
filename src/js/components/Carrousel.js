@@ -16,10 +16,8 @@ export function Carrousel()
 	const Liste = json.find((C) => C.id === id);
 
 	/*intégration*/
-	return<div>
-		<img src={Liste.pictures[Loge]} alt="Background-Loge" className="Loge-B"/>
-		<div className="Carrousel">
-			<div className="Chevr">
+	return<div className="Caroussel">
+			<div className="Carrousel-chevr">
 				<img src={imgCD} className="Chevr-D" alt="Chevr-D"/>
 				<button className="Chevr-BD" onClick={() => Loge===(Liste.pictures.length-1) ? setLoge(Loge - Liste.pictures.length+1) : setLoge(Loge + 1) }>
 				S
@@ -31,7 +29,7 @@ export function Carrousel()
 				P
 				</button>
 			</div>
-		</div>
+		<img src={Liste.pictures[Loge]} alt="Background-Loge" className="Carrousel-B"/>
 	</div>
 }
 

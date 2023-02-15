@@ -1,38 +1,101 @@
 /*Carrousel*/
 
-.Chevr
+.Caroussel
 {
+    @include Carrousel;
+    height: 415px;
     position: relative;
+    margin: 20px 0px;
+}
+
+.Carrousel-B
+{
+    border-radius: $border-radius-1;
+    height: 415px;
+    @include Carrousel;
+    object-fit: cover;
+}
+
+.Carrousel-chevr
+{
+    position: absolute;
+    @include Carrousel;
+    height: 415px;
 }
 
 .Chevr-D
 {
-    position: absolute;
-    bottom: 200px;
-    right:20px;
+    @include Chevron-droit;
+    top: 170px;
 }
 
 .Chevr-BD
 {
-    position: absolute;
-    bottom: 200px;
-    right:20px;
+    @include Chevron-droit;
+    top: 170px;
     font-size: 60px;
     opacity:0;
 }
 
 .Chevr-G
 {
-    position: absolute;
-    bottom: 190px;
-    left:20px;
+    @include Chevron-gauche;
+    top: 170px;
 }
 
 .Chevr-BG
 {
-    position: absolute;
-    bottom: 190px;
-    left:20px;
+    @include Chevron-gauche;
+    top: 170px;
     font-size: 60px;
     opacity:0;
+}
+
+@media screen and (max-width: 770px)
+{
+    .Caroussel
+    {
+        height: 225px;
+    }
+
+    .Carrousel-B
+    {
+        height: 225px;
+        border-radius: $border-radius-2;
+    }
+
+    .Carrousel-chevr
+    {
+        height: 225px;
+    }
+
+    .Chevr-D
+    {
+        top: 100px;
+        right: 5px;
+        height: 20px;
+        width: 10px;
+    }
+
+    .Chevr-BD
+    {
+        top: 100px;
+        right: 5px;
+        font-size: 20px;
+    }
+
+    .Chevr-G
+    {
+        top: 100px;
+        left: 5px;
+        height: 20px;
+        width: 10px;
+    }
+
+    .Chevr-BG
+    {
+        top: 100px;
+        left:5px;
+        font-size: 20px;
+    }
 }

@@ -12,7 +12,7 @@
     border-radius: 10px;
     margin-right: 10px;
     height: 30px;
-    width: 100px;
+    width: 130px;
 }
 
 .Tags-list
@@ -22,4 +22,21 @@
     top: 6px;
     text-align: center;
     font-size: 13px;
+}
+
+@media screen and (max-width: 770px)
+{
+    .Tags-box
+    {
+        background-color: $color-1;
+        border-radius: $border-radius-3;
+        margin-right: 2px;
+        height: 17px;
+        width: 100px;
+    }
+    .Tags-list
+    {
+        top: 0px;
+        font-size: 9px;
+    }
 }

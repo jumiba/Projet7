@@ -1,1 +1,25 @@
 /*Rating*/
+
+.Rating1
+{
+    margin: 0px;
+    display:block;
+}
+
+.Rating2
+{
+    display:none;
+}
+
+@media screen and (max-width: 770px)
+{
+    .Rating1
+    {
+        display:none;
+    }
+
+    .Rating2
+    {
+        display:block;
+    }
+}

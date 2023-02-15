@@ -46,3 +46,20 @@
     margin: 0px;
     padding: 5px 10px;
 }
+
+@mixin Carrousel
+{
+    width: 100%;
+}
+
+@mixin Chevron-droit
+{
+    position: absolute;
+    right: 0px;
+}
+
+@mixin Chevron-gauche
+{
+    position: absolute;
+    left: 0px;
+}

@@ -28,37 +28,47 @@ export function FicheLogement ()
         <div className="FicheLogement">
             <Carrousel />
             <div className="Loge-box-1">
-                <div className="Loge-title">
-                    <p className="Loge-title-1">{Liste.title}</p>
-                    <p className="Loge-location">{Liste.location}</p>
-                </div>
-                <div className="Loge-per">
+                <p className="Loge-title">{Liste.title}</p>
+                <div className="Loge-per1">
                     <div className="Loge-name">
                         <p className="Loge-host-1-1">{nom[0]}</p>
                         <p className="Loge-host-1-2">{nom[1]}</p>
-                    </div>
+                    </div> 
                     <img src={Liste.host.picture ? Liste.host.picture : {pp}} alt="Loge-host-2" className="Loge-host-2"/>
                 </div>
             </div>
+            <p className="Loge-location">{Liste.location}</p>
             <div className="Loge-box-2">
                 <Tags/>
-                <Rating/>
+                <Rating Rating="Rating1"/>
             </div>
-            <div className="Loge-AP">
-                <div className="AP1">
+            <div className="Loge-per2">
+                <Rating Rating="Rating2"/>
+                <div className="Loge-per2-2">
+                    <div className="Loge-name">
+                        <p className="Loge-host-1-1">{nom[0]}</p>
+                        <p className="Loge-host-1-2">{nom[1]}</p>
+                    </div> 
+                    <img src={Liste.host.picture ? Liste.host.picture : {pp}} alt="Loge-host-2" className="Loge-host-2"/>
+                </div>
+            </div>
+            <div className="Loge-FL">
+                <div className="FL1">
                     <TextBox
-                    Texttitle="Textbox-title-fl"
-                    Textchev="chev"
-                    Texttext="Textbox-text-fld"
+                    Textboxtitle="FL-Textbox-title"
+                    Textboxchev="FL-Textbox-chev"
+                    Textboxtext="FL-Textbox-text"
+                    Checkbox="FL-Checkbox"
                     title="Description" 
                     message={Liste.description}
                     />
                 </div>
-                <div className="AP2">
+                <div className="FL2">
                     <TextBox
-                    Texttitle="Textbox-title-fl"
-                    Textchev="chev"
-                    Texttext="Textbox-text-fld"
+                    Textboxtitle="FL-Textbox-title"
+                    Textboxchev="FL-Textbox-chev"
+                    Textboxtext="FL-Textbox-text"
+                    Checkbox="FL-Checkbox"
                     title="Équipements" 
                     message={listItems}
                     />    

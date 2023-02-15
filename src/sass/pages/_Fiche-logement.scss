@@ -1,59 +1,47 @@
 /*Page fiche logement*/
 
-
 .FicheLogement
 {
     margin: $margin-1;
-}
-
-.Loge-B
-{
-    border-radius: $border-radius-1;
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
 }
 
 .Loge-box-1
 {
     margin: 20px 0px;
     color: $color-1;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
-.Loge-title-1
+.Loge-title
 {
+    font-weight: 500;
     font-size: 36px;
-    margin: 0px;
-    padding: 0px;
 }
 
-.Loge-location
+.Loge-per1
 {
-    font-size: 18px;
-    margin: 0px;
-    padding: 0px;
-}
-
-.Loge-per
-{
-    right: 0px;
     display:flex;
-    position: absolute;
-    bottom: 0px;
+}
+
+.Loge-per2
+{
+    display:none;
 }
 
 .Loge-name
 {
     display:flex;
     flex-direction: column;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .Loge-host-1-1
 {
     text-align: end;
-    font-size: 18px;
     margin: 10px 0px 0px 0px;
     padding: 0px;
 }
@@ -61,7 +49,6 @@
 .Loge-host-1-2
 {
     text-align: end;
-    font-size: 18px;
     margin: 0px 0px 0px 0px;
     padding: 0px;
 }
@@ -74,24 +61,76 @@
     border-radius: 50%;
 }
 
-.Loge-box-2
+.Loge-location
 {
-    display:flex;
+    position: relative;
+    bottom: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-1;
+    margin: 0px;
+    padding: 0px;
 }
 
-.Loge-AP
+.Loge-box-2
+{
+    color: $color-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Loge-FL
 {
     display:flex;
     margin-top: 20px;
 }
 
-.AP1
+.FL1
 {
     flex: 1;
     margin-right: 50px;
 }
 
-.AP2
+.FL2
 {
     flex: 1;
+}
+
+@media screen and (max-width: 1150px)
+{
+    .Loge-title
+    {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 770px)
+{
+    .Loge-title
+    {
+        font-size: 18px;
+        margin: 0px;
+    }
+    .Loge-location
+    {
+        position: relative;
+        bottom: 10px;
+        font-size: 14px;
+    }
+
+    .Loge-per1
+    {
+        display:none;
+    }
+
+    .Loge-per2
+    {
+        display:flex;
+    }
+    .Loge-per2-2
+    {
+        display:flex;
+        justify-content: space-between;
+    }
 }

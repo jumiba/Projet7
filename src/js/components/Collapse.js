@@ -38,7 +38,7 @@ export class TextBox extends Component
                     <img src={chevH} alt="K" className={this.props.Textboxchev}/>
                 </div>
             }
-            <input type="checkbox" className="Checkbox" checked={this.state.checked} onChange={this.showText}/>
+            <input type="checkbox" className={this.props.Checkbox} checked={this.state.checked} onChange={this.showText}/>
         </div>
     }
 }

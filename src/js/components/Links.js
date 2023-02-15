@@ -24,7 +24,7 @@ export function LinkHome({logement})
 /*Fonction LinkError*/
 export function LinkError()
 {
-    return<div>
+    return<div className="Erreur-div">
         <Link to={"/"} className="Erreur-l">
             <p className="Erreur-a">Retourner sur la page d'accueil</p>
         </Link>

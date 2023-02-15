@@ -7,7 +7,7 @@ import imgEP from "../assets/star.png";
 import imgEV from "../assets/star-empty.png";
 
 /*Fonction Rating pour l'affichage des étoiles*/
-export function Rating ()
+export function Rating (props)
 {
     /*Variables*/
 	const {id} = useParams();
@@ -23,7 +23,7 @@ export function Rating ()
     const Etoile1 = Liste.rating === "1" ? <div className="etoiles">{EtoilePleine} {EtoileVide} {EtoileVide} {EtoileVide} {EtoileVide}</div>: null ;
 
     /*intégration*/
-    return<div className="Loge-Rating">
+    return<div className={props.Rating}>
         {Etoile1}{Etoile2}{Etoile3}{Etoile4}{Etoile5}
     </div>
 }
