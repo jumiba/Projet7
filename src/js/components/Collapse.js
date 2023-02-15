@@ -23,10 +23,21 @@ export class TextBox extends Component
     render()
     {
         return<div className="Textbox">
-            <label htmlFor="title" className="Textbox-box"><p className={this.props.Texttitle}>{this.props.title}</p></label>
-            {this.state.checked ? 
-            <div className="div-B"><img src={chevB} alt="K" className={this.props.Textchev}/> <p className={this.props.Texttext}>{this.props.message}</p></div>
-            : <div className="div-B"><img src={chevH} alt="K" className={this.props.Textchev}/></div>}
+            <label htmlFor="title" className={this.props.Textboxtitle}>{this.props.title}</label>
+            <label htmlFor="title" className={this.props.Textboxtitle1}>{this.props.title1}</label>
+            <label htmlFor="title" className={this.props.Textboxtitle2}>{this.props.title2}</label>
+            {
+                this.state.checked
+                ? 
+                <div>
+                    <img src={chevB} alt="K" className={this.props.Textboxchev}/>
+                    <p className={this.props.Textboxtext}>{this.props.message}</p>
+                </div>
+                :
+                <div>
+                    <img src={chevH} alt="K" className={this.props.Textboxchev}/>
+                </div>
+            }
             <input type="checkbox" className="Checkbox" checked={this.state.checked} onChange={this.showText}/>
         </div>
     }

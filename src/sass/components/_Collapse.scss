@@ -2,27 +2,77 @@
 
 .Textbox
 {
+    position: relative;
     display:flex;
     flex-direction: column;
-    position: relative;
-    margin: 0px;
-    padding: 0px;
+    margin-bottom: 30px;
 }
 
-.div-B
+.AP-Textbox-title
 {
-    margin: 0px;
-    padding: 0px;
+    @include Textbox-title;
 }
 
-.Textbox-title
+.AP-Textbox-title1
 {
-    background-color: $color-1;
-    color: $color-3;
-    border-radius: $border-radius-3;
-    margin: 0px;
-    padding: 5px 10px;
+    @include Textbox-title;
+    display: block;
 }
+
+.AP-Textbox-title2
+{
+    @include Textbox-title;
+    display: none;
+}
+
+.AP-Textbox-chev
+{
+    position: absolute;
+    height: 15px;
+    width: 25px;
+    right : 18px;
+    top : 12px;
+}
+
+.AP-Textbox-text
+{
+    background-color: $color-5;
+    border-radius: 0px 0px 5px 5px;
+    color: $color-1;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 40px;
+}
+
+.Checkbox
+{
+    position: absolute;
+    top: 7px;
+    right: 18px;
+    height: 20px;
+    width: 20px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px)
+{
+    .AP-Textbox-title1
+    {
+        display: none;
+    }
+
+    .AP-Textbox-title2
+    {
+        display: block;
+    }
+
+    .AP-Textbox-chev
+    {
+        right : 10px;
+        top : 5px;
+    }
+}
+
+
 
 .Textbox-title-fl
 {
@@ -32,32 +82,6 @@
     margin: 0px;
     padding: 10px;
     font-size: 18px;
-}
-
-.chev
-{
-    position: absolute;
-    right : 18px;
-    top : 12px;
-}
-
-.Checkbox
-{
-    position: absolute;
-    top: 7px;
-    right: 20px;
-    height: 20px;
-    width: 20px;
-    opacity: 0;
-}
-
-.Textbox-text
-{
-    background-color: $color-5;
-    border-radius: 0px 0px 5px 5px;
-    color: $color-1;
-    margin: 0px 0px 0px 0px;
-    padding: 20px 40px;
 }
 
 .Textbox-text-fld
@@ -71,5 +95,3 @@
     font-size: 18px;
     list-style-type:none;
 }
-
-
