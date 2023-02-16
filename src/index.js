@@ -12,6 +12,9 @@ import { APropos } from "./js/pages/A-Propos.js";
 import {PageError} from "./js/pages/Error.js";
 import {FicheLogement} from "./js/pages/Fiche-logement.js";
 
+/*Importation des informations des logements*/
+import json from "./js/utils/logements.json";
+
 /*Routers du site*/
 const router = createBrowserRouter
 ([
@@ -28,9 +31,18 @@ const router = createBrowserRouter
         children: []
     },
     {
-        path: "/logements/:id" ,
+        path: "/logements/:id",
         element: <FicheLogement />,
         errorElement: <PageError />,
+        loader: ({ params }) =>
+        {
+            const JsonId = json.find((C) => C.id === params.id);
+            if(params.id !== JsonId.id)
+            {
+                throw new Response("Not Found", { status: 404 });  
+            }
+            return params
+        },
         children:[]
     },
     {

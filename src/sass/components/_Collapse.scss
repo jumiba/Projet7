@@ -82,6 +82,7 @@
     padding: 40px 20px;
     font-weight: 400;
     font-size: 18px;
+    list-style-type:none;
 }
 
 .FL-Checkbox
@@ -108,13 +109,40 @@
 
     .AP-Textbox-chev
     {
-        right : 10px;
-        top : 5px;
+        right : 8px;
+        top : 8px;
+        height: 10px;
+        width: 18px;
     }
 
     .AP-Checkbox
     {
-        top: 2px;
-        right: 10px;
+        right : 6px;
+        top : 3px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .FL-Textbox-title
+    {
+        font-size: 13px;
+    }
+
+    .FL-Textbox-text
+    {
+        font-size: 12px;
+        padding: 20px 5px 2px 10px;
+    }
+
+    .FL-Checkbox
+    {
+        height: 15px;
+        width: 15px;
+    }
+
+    .FL-Textbox-chev
+    {
+        height: 10px;
+        width: 18px;
     }
 }

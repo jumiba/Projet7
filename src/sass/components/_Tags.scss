@@ -4,6 +4,7 @@
 {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .Tags-box
@@ -11,7 +12,8 @@
     background-color: $color-1;
     border-radius: 10px;
     margin-right: 10px;
-    height: 30px;
+    margin-bottom: 10px;
+    height: 25px;
     width: 130px;
 }
 
@@ -19,7 +21,7 @@
 {
     position: relative;
     color: $color-3;
-    top: 6px;
+    top: 5px;
     text-align: center;
     font-size: 13px;
 }
@@ -30,13 +32,14 @@
     {
         background-color: $color-1;
         border-radius: $border-radius-3;
-        margin-right: 2px;
         height: 17px;
         width: 100px;
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
     .Tags-list
     {
-        top: 0px;
+        top: 2px;
         font-size: 9px;
     }
 }

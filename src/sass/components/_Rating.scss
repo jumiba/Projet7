@@ -6,6 +6,18 @@
     display:block;
 }
 
+.E-Vide
+{
+    height: 20px;
+    width: 20px;
+}
+
+.E-Pleine
+{
+    height: 20px;
+    width: 20px;
+}
+
 .Rating2
 {
     display:none;
@@ -22,4 +34,17 @@
     {
         display:block;
     }
+
+    .E-Vide
+    {
+        height: 15px;
+        width: 15px;
+    }
+
+    .E-Pleine
+    {
+        height: 15px;
+        width: 15px;
+    }
+
 }

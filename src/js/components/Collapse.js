@@ -30,12 +30,12 @@ export class TextBox extends Component
                 this.state.checked
                 ? 
                 <div>
-                    <img src={chevB} alt="K" className={this.props.Textboxchev}/>
+                    <img src={chevH} alt="K" className={this.props.Textboxchev}/>
                     <p className={this.props.Textboxtext}>{this.props.message}</p>
                 </div>
                 :
                 <div>
-                    <img src={chevH} alt="K" className={this.props.Textboxchev}/>
+                    <img src={chevB} alt="K" className={this.props.Textboxchev}/>
                 </div>
             }
             <input type="checkbox" className={this.props.Checkbox} checked={this.state.checked} onChange={this.showText}/>
